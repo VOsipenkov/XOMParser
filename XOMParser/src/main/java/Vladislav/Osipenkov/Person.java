@@ -36,4 +36,22 @@ public class Person {
             e.printStackTrace();
         }
     }
+
+    public Element getXml() {
+        Element root = new Element("Person");
+        Element firstNameElem = new Element("firstName");
+        Element lastNameElem = new Element("lastName");
+
+        firstNameElem.appendChild(firstName);
+        lastNameElem.appendChild(lastName);
+
+        root.appendChild(firstNameElem);
+        root.appendChild(lastNameElem);
+
+        return root;
+    }
+
+    public String toString() {
+        return firstName + " " + lastName;
+    }
 }
