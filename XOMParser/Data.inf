@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<people>
+    <Person>
+        <firstName>Vlad</firstName>
+        <lastName>Osipenkov</lastName>
+    </Person>
+    <Person>
+        <firstName>Alex</firstName>
+        <lastName>Mutex</lastName>
+    </Person>
+    <Person>
+        <firstName>Mr</firstName>
+        <lastName>Anderson</lastName>
+    </Person>
+</people>

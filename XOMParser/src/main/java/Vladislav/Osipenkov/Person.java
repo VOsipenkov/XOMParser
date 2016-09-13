@@ -19,8 +19,8 @@ public class Person {
     }
 
     public Person(Element root) {
-        firstName = root.getFirstChildElement("firstName").toString();
-        lastName = root.getFirstChildElement("lastName").toString();
+        firstName = root.getFirstChildElement("firstName").getValue();
+        lastName = root.getFirstChildElement("lastName").getValue();
     }
 
     public static void toXml(OutputStream out, Document document) {
