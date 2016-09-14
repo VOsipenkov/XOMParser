@@ -12,15 +12,18 @@ import java.io.UnsupportedEncodingException;
 public class Person {
     private String firstName;
     private String lastName;
+    private String addressInfo;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, String addressInfo) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.addressInfo = addressInfo;
     }
 
     public Person(Element root) {
         firstName = root.getFirstChildElement("firstName").getValue();
         lastName = root.getFirstChildElement("lastName").getValue();
+        addressInfo = root.getFirstChildElement("addressInfo").getValue();
     }
 
     public static void toXml(OutputStream out, Document document) {
@@ -41,17 +44,20 @@ public class Person {
         Element root = new Element("Person");
         Element firstNameElem = new Element("firstName");
         Element lastNameElem = new Element("lastName");
+        Element addressElem = new Element("addressInfo");
 
         firstNameElem.appendChild(firstName);
         lastNameElem.appendChild(lastName);
+        addressElem.appendChild(addressInfo);
 
         root.appendChild(firstNameElem);
         root.appendChild(lastNameElem);
+        root.appendChild(addressElem);
 
         return root;
     }
 
     public String toString() {
-        return firstName + " " + lastName;
+        return firstName + " " + lastName + " " +addressInfo;
     }
 }

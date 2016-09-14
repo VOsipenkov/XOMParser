@@ -3,13 +3,16 @@
     <Person>
         <firstName>Vlad</firstName>
         <lastName>Osipenkov</lastName>
+        <addressInfo>Nizhny Novgorod</addressInfo>
     </Person>
     <Person>
         <firstName>Alex</firstName>
         <lastName>Mutex</lastName>
+        <addressInfo>New York</addressInfo>
     </Person>
     <Person>
         <firstName>Mr</firstName>
         <lastName>Anderson</lastName>
+        <addressInfo>Moskow</addressInfo>
     </Person>
 </people>

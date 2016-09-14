@@ -15,9 +15,9 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws FileNotFoundException {
         List<Person> persons = Arrays.asList(
-                new Person("Vlad", "Osipenkov"),
-                new Person("Alex", "Mutex"),
-                new Person("Mr", "Anderson")
+                new Person("Vlad", "Osipenkov", "Nizhny Novgorod"),
+                new Person("Alex", "Mutex", "New York"),
+                new Person("Mr", "Anderson", "Moskow")
         );
 
         System.out.println(persons);
